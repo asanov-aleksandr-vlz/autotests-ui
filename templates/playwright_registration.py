@@ -1,4 +1,5 @@
 from playwright.sync_api import sync_playwright, expect
+
 with sync_playwright() as playwright:
     browser = playwright.chromium.launch(headless=False)
     new_page = browser.new_page()
@@ -13,5 +14,5 @@ with sync_playwright() as playwright:
     registration_button.click()
     dashboard_alert = new_page.locator('//*[@data-testid="dashboard-toolbar-title-text"]')
     expect(dashboard_alert).to_be_visible()
-    expect(dashboard_alert).to_have_text("Dashboard")  
+    expect(dashboard_alert).to_have_text("Dashboard")
     new_page.wait_for_timeout(5000)
