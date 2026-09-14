@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .h2-text {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-<div><h1>Заголовок H1</h1>
-    <h2>Заголовок H2</h2>
-    <h6>Заголовок H6</h6>
+<div><h1 id="h1-text">Заголовок H1</h1>
+    <h2 class="h2-text">Заголовок H2</h2>
+    <h6 id="h6-text" class="h2-text">Заголовок H6</h6>
     <p>Обычный текст, <span style="color: green">который</span>, можно редактировать и выделять разным цветом по
         желанию.</p></div>
 <a href="https://playwright.dev/python/" target="_blank">Ссылка</a>
@@ -28,7 +33,7 @@
     <input required type="email" placeholder="введи email">
     <input type="password" placeholder="введи password">
     <textarea placeholder="text">дефолт 12345</textarea>
-    <button type="submit">кнопка enter</button>
+    <button type="submit" disabled>кнопка enter</button>
 </form>
 <table>
     <thead>
