@@ -44,5 +44,3 @@ def test_empty_courses_list():
         expect(results_from_the_load_test_pipeline_will_be_displayed_here_alert).to_be_visible()
         expect(results_from_the_load_test_pipeline_will_be_displayed_here_alert).to_have_text(
             "Results from the load test pipeline will be displayed here")
-
-
